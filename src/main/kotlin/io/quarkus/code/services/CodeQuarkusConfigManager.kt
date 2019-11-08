@@ -31,6 +31,14 @@ open class CodeQuarkusConfigManager {
     @ConfigProperty(name = "io.quarkus.code.sentry-dsn", defaultValue = "")
     internal lateinit var sentryDSN: Provider<Optional<String>>
 
+    @ConfigProperty(name = "io.quarkus.code.github.clientId", defaultValue = "")
+    lateinit var clientId: String
+        private set
+
+    @ConfigProperty(name = "io.quarkus.code.github.clientSecret", defaultValue = "")
+    lateinit var clientSecret: String
+        private set
+
     fun getConfig(): Config {
         return Config(
                 environment.get(),
