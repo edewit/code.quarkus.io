@@ -1,6 +1,6 @@
-package io.quarkus.code.services
+package io.quarkus.code.quarkus
 
-import io.quarkus.code.model.CodeQuarkusExtension
+import io.quarkus.code.quarkus.model.CodeQuarkusExtension
 import io.quarkus.test.junit.QuarkusTest
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.*

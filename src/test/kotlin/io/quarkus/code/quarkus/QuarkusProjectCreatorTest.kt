@@ -1,6 +1,6 @@
-package io.quarkus.code.services
+package io.quarkus.code.quarkus
 
-import io.quarkus.code.model.QuarkusProject
+import io.quarkus.code.quarkus.model.QuarkusProject
 import io.quarkus.platform.descriptor.resolver.json.QuarkusJsonPlatformDescriptorResolver
 import io.quarkus.test.junit.QuarkusTest
 import org.eclipse.microprofile.config.spi.ConfigProviderResolver

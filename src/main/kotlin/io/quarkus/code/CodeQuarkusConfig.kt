@@ -1,14 +1,13 @@
-package io.quarkus.code.services
+package io.quarkus.code
 
-import io.quarkus.code.model.Config
-import io.quarkus.code.services.QuarkusExtensionCatalog.Companion.bundledQuarkusVersion
+import io.quarkus.code.quarkus.QuarkusExtensionCatalog.Companion.bundledQuarkusVersion
 import org.eclipse.microprofile.config.inject.ConfigProperty
 import java.util.*
 import javax.inject.Provider
 import javax.inject.Singleton
 
 @Singleton
-open class CodeQuarkusConfigManager {
+open class CodeQuarkusConfig {
 
     companion object {
         const val GROUPID_PATTERN = "^([a-zA-Z_\$][a-zA-Z\\d_\$]*\\.)*[a-zA-Z_\$][a-zA-Z\\d_\$]*\$"
