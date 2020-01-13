@@ -1,11 +1,11 @@
-package io.quarkus.code.quarkus
+package io.quarkus.code.services
 
 import io.quarkus.cli.commands.AddExtensions
 import io.quarkus.cli.commands.CreateProject
 import io.quarkus.cli.commands.writer.FileProjectWriter
 import io.quarkus.cli.commands.writer.ProjectWriter
-import io.quarkus.code.quarkus.model.QuarkusProject
-import io.quarkus.code.quarkus.writer.CommonsZipProjectWriter
+import io.quarkus.code.model.QuarkusProject
+import io.quarkus.code.writer.CommonsZipProjectWriter
 import io.quarkus.generators.BuildTool
 import java.io.ByteArrayOutputStream
 import java.io.IOException
@@ -49,7 +49,7 @@ open class QuarkusProjectCreator {
         val location = Files.createTempDirectory("generated-")
         val fileProjectWriter = FileProjectWriter(location.toFile())
         createProject(project, fileProjectWriter)
-        return location;
+        return location
     }
 
     private fun createProject(project: QuarkusProject, projectWriter: ProjectWriter) {

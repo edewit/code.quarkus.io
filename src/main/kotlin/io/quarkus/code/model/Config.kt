@@ -1,6 +1,6 @@
-package io.quarkus.code.quarkus.model
+package io.quarkus.code.model
 
-data class PublicConfig(
+data class Config(
         val environment: String,
         val gaTrackingId: String?,
         val sentryDSN: String?,

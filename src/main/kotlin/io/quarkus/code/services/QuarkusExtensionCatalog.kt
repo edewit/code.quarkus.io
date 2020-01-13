@@ -1,4 +1,4 @@
-package io.quarkus.code.quarkus
+package io.quarkus.code.services
 
 import com.google.common.base.Preconditions.checkState
 import io.quarkus.platform.descriptor.resolver.json.QuarkusJsonPlatformDescriptorResolver

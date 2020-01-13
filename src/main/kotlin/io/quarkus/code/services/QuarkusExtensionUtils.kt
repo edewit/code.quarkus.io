@@ -1,7 +1,7 @@
-package io.quarkus.code.quarkus
+package io.quarkus.code.services
 
 import com.google.common.collect.Lists
-import io.quarkus.code.quarkus.model.CodeQuarkusExtension
+import io.quarkus.code.model.CodeQuarkusExtension
 import io.quarkus.dependencies.Category
 import io.quarkus.dependencies.Extension
 import io.quarkus.platform.descriptor.QuarkusPlatformDescriptor

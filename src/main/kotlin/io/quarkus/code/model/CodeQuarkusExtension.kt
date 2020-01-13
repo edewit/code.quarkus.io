@@ -1,4 +1,4 @@
-package io.quarkus.code.quarkus.model
+package io.quarkus.code.model
 
 data class CodeQuarkusExtension(
         val id: String,

@@ -1,10 +1,10 @@
 package io.quarkus.code
 
-import io.quarkus.code.quarkus.model.QuarkusProject
+import io.quarkus.code.model.QuarkusProject
+import io.quarkus.code.services.QuarkusProjectCreatorMock
 import io.quarkus.test.junit.QuarkusTest
 import io.restassured.RestAssured.given
-import org.hamcrest.CoreMatchers.equalTo
-import org.hamcrest.CoreMatchers.notNullValue
+import org.hamcrest.CoreMatchers.*
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.greaterThan
 import org.junit.jupiter.api.DisplayName
